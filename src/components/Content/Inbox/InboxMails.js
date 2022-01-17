@@ -4,7 +4,7 @@ const InboxMails = (props) => {
 
 
 
-    const mailItems = props.mailData.map(elem => <InboxMail name = {elem.name} time = {elem.time} message = {elem.message} id = {elem.id}/>)
+    const mailItems = props.mailData.map(elem => <InboxMail name={elem.name} time={elem.time} message={elem.message} id={elem.id} key={elem.id}/>)
 
     return(
         <div>
