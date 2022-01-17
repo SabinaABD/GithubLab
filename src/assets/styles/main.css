@@ -1,0 +1,30 @@
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "navbar header"
+    "navbar content"
+    "footer footer";
+
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 2fr 10fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 10px;
+
+}

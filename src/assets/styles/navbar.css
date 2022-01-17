@@ -1,0 +1,120 @@
+.navbar__content {
+}
+
+.navbar__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 23px;
+}
+
+.navbar__header-title {
+   padding: 10px ;
+    font-size: 9px;
+    line-height: 15px;
+}
+
+.navbar__menu {
+}
+
+.navbar__menu-item {
+    font-family: "Work Sans";
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 12px;
+    padding-left: 48px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.navbar__menu-item_active {
+    position: relative;
+}
+
+.navbar__menu-item_active:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #0078CE;
+    border-radius: 50%;
+    left: -20px;
+    top: 1px;
+}
+
+/*.navbar__menu-item_active:after {
+    content: "3";
+    position: absolute;
+    background-color: #0078CE;
+    width: 30px;
+    height: 17px;
+    padding: 1px 5px;
+    color: white;
+    border-radius: 17px;
+    font-size: 10px;
+    line-height: 15px;
+    top: -3px;
+    right: 11px;
+    text-align: center;
+}*/
+
+.navbar__user {
+    position: relative;
+}
+
+.navbar__user-img {
+    width: 52px;
+    height: 52px;
+    position: relative;
+    margin: 0 auto;
+    border: none;
+}
+
+.navbar__user-avatar {
+    position: absolute;
+    top: 26px;
+    left: 1px;
+    width: 51px;
+    height: 51px;
+}
+
+.navbar__user-mail {
+    background-color: #4A90E2;
+    border-radius: 50%;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -25px;
+    right: -3px;
+}
+
+.navbar__user-mail-img {
+    width: 13px;
+    height: 9px;
+}
+
+.navbar__user-info {
+    background-color: #F9F9F9;
+    border-radius: 7px;
+    padding: 35px 6px 7px;
+    margin-bottom: 28px;
+}
+
+.navbar__user-name {
+    font-size: 14px;
+    line-height: 22px;
+    color: #324552;
+}
+
+.navbar__user-company {
+    font-size: 9px;
+    line-height: 15px;
+    color: #566976;
+}

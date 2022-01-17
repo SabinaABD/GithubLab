@@ -1,0 +1,235 @@
+.inbox__inner {
+    display: grid;
+    grid-template-areas:
+    'navbar mails'
+;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 10px;
+    max-width: 800px;
+}
+
+.inbox__navbar {
+    padding: 18px;
+    background-color: rgba(248, 250, 251, 1);
+}
+
+.inbox__navbar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inbox__navbar-title-text {
+    font-family: "Work Sans";
+    font-size: 20px;
+    line-height: 24px;
+    color: #324552;
+}
+
+.inbox__navbar-title-btn {
+    background-color: #0078CE;
+    border-radius: 4px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.inbox__navbar-title-btn-img {
+    width: 17px;
+    height: 17px;
+    margin-right: 6px;
+}
+
+.inbox__navbar-title-btn-text {
+    font-size: 10px;
+    line-height: 15px;
+    color: white;
+}
+
+.inbox__mails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.inbox__mail {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.inbox__mail-status {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inbox__mail-status-item {
+    background-color: rgba(0, 120, 206, 1);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-bottom: 3px;
+
+}
+
+.inbox__mail-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inbox__mail-avatar {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.inbox__mail-avatar-img {
+    width: 29px;
+    height: 29px;
+}
+
+.inbox__mail-text-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inbox__mail-text-username {
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "Work Sans";
+    color: rgba(50, 69, 82, 1);
+}
+
+.inbox__mail-text-time {
+    font-size: 9px;
+    line-height: 15px;
+    color: rgba(125, 146, 161, 1);
+}
+
+.inbox__mail-text-message {
+    font-size: 9px;
+    line-height: 15px;
+    color: rgba(50, 69, 82, 1);
+    text-align: left;
+}
+
+.inbox__email {
+
+}
+
+.inbox__email__header {
+    padding: 15px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inbox__email__header-user {
+    display: flex;
+    align-items: center;
+}
+
+.inbox__email__header-user-avatar {
+    margin-right: 12px;
+}
+
+.inbox__email__header-user-avatar-img {
+    width: 35px;
+    height: 35px;
+}
+
+.inbox__email__header-user-name {
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(50, 69, 82, 1);
+}
+
+.inbox__email__header-previous {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(50, 69, 82, 1);
+}
+
+.inbox__email-title {
+    padding: 23px;
+}
+
+.inbox__email-title-time {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(50, 69, 82, 1);
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.inbox__email-title-text {
+    font-size: 29px;
+    line-height: 34px;
+    color: rgba(50, 69, 82, 1);
+    text-align: left;
+}
+
+.inbox__email-title-reply {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 22px;
+}
+
+.inbox__email-title-reply-img {
+    width: 17px;
+    height: 17px;
+    margin-right: 6px;
+}
+
+.inbox__email-title-reply-text {
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(0, 120, 206, 1);
+}
+
+.inbox__email-content {
+    padding: 23px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(50, 69, 82, 1);
+    text-align: left;
+}
+
+.inbox__email-content-greeting {
+    margin-bottom: 23px;
+}
+
+.inbox__email-content-text {
+    margin-bottom: 35px;
+}
+
+.inbox__email-content-images {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 75px;
+}
+
+.inbox__email-content-images-item {
+    width: 230px;
+    height: 160px;
+}
+
+.inbox__email-content-download {
+    display: flex;
+    padding: 8px 12px;
+}
+
+.inbox__email-content-download-img {
+    width: 17px;
+    height: 17px;
+    margin-right: 6px;
+}
+
+.inbox__email-content-download-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 120, 206, 1);
+}

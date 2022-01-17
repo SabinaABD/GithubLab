@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSansMedium.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+input {
+    border: none;
+    background-color: inherit;
+}
+
+.header {
+    max-width: 800px;
+}
+
+.header__inner {
+    padding: 18px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__menu-img {
+    height: 20px;
+}
+
+
+

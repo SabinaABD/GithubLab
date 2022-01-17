@@ -1,0 +1,50 @@
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.dashboard__inner {
+    background-color: pink;
+    padding: 100px;
+    text-align: left;
+}
+
+.dashboard__title {
+    font-size: 40px;
+    line-height: 52px;
+    color: #324552;
+    margin-bottom: 15px;
+}
+
+.dashboard__create-post {
+    margin-bottom: 15px;
+}
+
+.dashboard__create-post-input {
+    color: #7D92A1;
+    border: 1px solid white;
+}
+
+.dashboard__create-post-btn {
+    padding: 5px 12px;
+    font-size: 15px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dashboard__posts-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(230, 230, 250, 0.5);
+    border-radius: 20px;
+}
+
+.dashboard__posts-item-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
