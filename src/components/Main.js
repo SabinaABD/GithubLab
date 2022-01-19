@@ -9,7 +9,6 @@ import Properties from "./Content/Properties";
 import Users from "./Content/Users";
 import Messages from "./Content/Inbox/Messages";
 import {BrowserRouter as Router, Routes, Route, NavLink, Link} from 'react-router-dom'
-import NavbarUser from "./Navbar/NavbarUser";
 
 
 const Main = (props) => {
@@ -26,14 +25,16 @@ const Main = (props) => {
                     />
                     <div className='content'>
                         <Routes>
-                            <Route path='/dashboard' element={<Dashboard postData = {props.postData}/>}/>
+                            <Route path='/dashboard' element={<Dashboard postData = {props.postData}
+                                                                         dispatch = {props.dispatch}/>}/>
                             <Route path='/inbox' element={<Inbox emailUserName = {props.emailUserName}
                                                                    emailTime = {props.emailTime}
                                                                    mailData = {props.mailData}/>}/>
                             <Route path='/properties' element={<Properties />}/>
                             <Route path='/users' element={<Users />}/>
                             <Route path='/messages' element={<Messages usersData = {props.usersData}
-                                                                         massagesData = {props.massagesData}/>}/>
+                                                                       massagesData = {props.massagesData}
+                                                                       dispatch = {props.dispatch}/>}/>
                             <Route path='/files' element={<Files />}/>
                         </Routes>
                     </div>

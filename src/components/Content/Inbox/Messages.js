@@ -2,6 +2,7 @@ import '../../../assets/styles/messages.css'
 import MessageItem from "../Messages/MessageItem";
 import UserItem from "../Messages/UserItem";
 import React from "react";
+import {addMessageActionCreator, updateNewMessageTextActionCreator} from "../../../redux/store";
 
 const Messages = (props) => {
 
@@ -11,10 +12,15 @@ const Messages = (props) => {
 
     const newMessageElement = React.createRef()
 
-    let addMessage = () => {
-        let text = newMessageElement.current.value
-        alert(text)
+    const addMessage = () => {
+        props.dispatch(addMessageActionCreator())
     }
+
+    const updateMessageText = () => {
+        let text = newMessageElement.current.value
+        props.dispatch(updateNewMessageTextActionCreator(text))
+    }
+
 
     return (
         <div>
@@ -25,7 +31,7 @@ const Messages = (props) => {
                     </div>
                     <div className="messages__messages">
                         {messagesItems}
-                        <input type="text" ref={newMessageElement}/>
+                        <input onChange={updateMessageText} type="text" ref={newMessageElement}/>
                         <button onClick={addMessage}>Send message</button>
                     </div>
                 </div>

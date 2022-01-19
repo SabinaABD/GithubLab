@@ -1,7 +1,5 @@
 import './App.css';
 import Main from "./components/Main";
-import NavbarUser from "./components/Navbar/NavbarUser";
-
 function App(props) {
 
   return (
@@ -15,6 +13,7 @@ function App(props) {
             usersData = {props.state.messages.usersData}
             massagesData = {props.state.messages.messagesData}
             postData = {props.state.dashboard.postData}
+            dispatch = {props.dispatch}
       />
 
     </div>

@@ -9,7 +9,7 @@ const PostItem = (props) => {
                     </div>
                 </div>
                 <div className="dashboard__posts-item-likes">
-                    like 10
+                    like {props.likes}
                 </div>
             </div>
         </div>
