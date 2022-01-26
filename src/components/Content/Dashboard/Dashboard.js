@@ -1,24 +1,23 @@
-import '../../assets/styles/dashboard.css'
-import PostItem from "./Dashboard/PostItem";
+import '../../../assets/styles/dashboard.css'
+import PostItem from "./PostItem";
 import React from "react";
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../redux/store";
 
 
 
 
 const Dashboard = (props) => {
 
-    const postItems = props.postData.map(elem => <PostItem id = {elem.id} text = {elem.text} likes = {elem.likes}/>)
+    const postItems = props.postData.map(elem => <PostItem id = {elem.id} text = {elem.text} likes = {elem.likes} key = {elem.id}/>)
 
     let newPostElement = React.createRef()
 
     let addPost = () => {
-        props.dispatch(addPostActionCreator())
+        props.addPost()
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value
-        props.dispatch(updateNewPostTextActionCreator(text))
+        props.onPostChange(text)
     }
 
 

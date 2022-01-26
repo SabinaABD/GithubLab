@@ -7,7 +7,7 @@ const UserItem = (props) => {
         <div>
             <div className="messages__user">
                 <div className="messages__user-avatar">
-                    <img src={require("../../../assets/images/Avatar.png")} alt="" className="messages__user-avatar-img"/>
+                    <img src={require("../../../assets/images/karina.png")} alt="" className="messages__user-avatar-img"/>
                 </div>
                 <div className="messages__user-name">
                     <NavLink to = {path}> {props.name} </NavLink>

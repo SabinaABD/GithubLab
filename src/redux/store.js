@@ -1,5 +1,4 @@
 import dashboardReducer from "./dashboardReducer";
-import inboxReducer from "./inboxReducer";
 import messagesReducer from "./messagesReducer";
 
 const ADD_POST = 'ADD-POST';
@@ -50,7 +49,7 @@ let store = {
                 {id: 5, text: 'Comment my page', likes: 15},
                 {id: 6, text: 'Write me a message', likes: 34},
             ],
-            newPostText : 'sabina'
+            newPostText : ''
         }
     },
 
@@ -65,14 +64,14 @@ let store = {
         this._callSubscriber = observer
     },
 
-    dispatch(action) { //
+    dispatch(action) {
         this._state.dashboard = dashboardReducer(this._state.dashboard, action)
-        /*this._state.inbox = inboxReducer(this._state.inbox, action)*/
         this._state.messages = messagesReducer(this._state.messages, action)
         this._callSubscriber(this._state)
     },
 }
 
+/*
 export const addPostActionCreator = () => {
     return {
         type: ADD_POST
@@ -98,6 +97,7 @@ export const updateNewMessageTextActionCreator = (text) => {
         newMessageText: text,
     }
 }
+*/
 
 
 

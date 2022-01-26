@@ -1,7 +1,6 @@
 import '../../assets/styles/navbar.css'
 import {NavLink, Link} from 'react-router-dom'
 import NavbarHeader from "./NavbarHeader";
-import NavbarUser from "./NavbarUser";
 
 const Navbar = (props) => {
 
@@ -32,10 +31,6 @@ const Navbar = (props) => {
                             <NavLink to ="/messages" className = {setActive}>Messages</NavLink>
                         </div>
                     </nav>
-                    <NavbarUser userName ={props.userName}
-                                companyName = {props.companyName}
-                                avatar = {props.avatar}
-                    />
                 </div>
             </div>
         </div>

@@ -26,6 +26,12 @@ input {
     margin-bottom: 10px;
 }
 
+.messages__user-avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
 .messages__messages {
     grid-area: m;
     text-align: left;
